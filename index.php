@@ -1,6 +1,8 @@
 <?php
-    Echo "Hei mitt navn er Adrian Kristoffer Viken! Jeg har tag 'zujuztyle' på discord under navnet Adrian. ";
-    Echo "<br> For å se de forskjellige oppgavene fra index siden kan du trykke på linkene under.";
+    Echo "Hei mitt navn er Adrian Kristoffer Viken! 
+        Jeg har tag 'zujuztyle' på discord under navnet Adrian. ";
+    Echo "<br> For å se de forskjellige oppgavene fra index siden
+        kan du trykke på linkene under.";
    
     ?>
 <!DOCTYPE html>
@@ -8,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modul 2 av Adrian Viken</title>
+    <title>IS-115 Moduler</title>
 </head>
 <body>
 
