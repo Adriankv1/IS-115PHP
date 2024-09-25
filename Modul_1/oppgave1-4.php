@@ -14,7 +14,7 @@
     <title>Oppgave 4</title>
 </head>
 <body>
-<p><a href="index.php">Gå tilbake</a></p> 
+
 
 <p>Summen av <?php echo $tall1; ?> og 
 <?php echo $tall2; ?> er <?php echo $sum; ?>.</p>

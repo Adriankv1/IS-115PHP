@@ -7,7 +7,7 @@
     <title>Oppgave 2-3</title>
 </head>
 <body>
-    <a href=index.php>Gå tilbake</a>
+  
 
     <?php 
     echo "<br>";

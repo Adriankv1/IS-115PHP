@@ -58,8 +58,6 @@ function testPasswordGenerator() {
     <title>Document</title>
 </head>
 <body>
-    <a href=index.php>Gå tilbake</a>
-
     <p><?php echo $tilfeldigPassord . "<br> TESTING"; 
     testPasswordGenerator();?></p>
 </body>

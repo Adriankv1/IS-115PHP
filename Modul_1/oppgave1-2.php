@@ -6,7 +6,6 @@
     <title>Oppgave 2</title>
 </head>
 <body>
-    <p><a href="index.php">Gå tilbake</a></p>
 </body>
 </html>
 <?php

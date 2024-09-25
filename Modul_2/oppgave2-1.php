@@ -26,7 +26,7 @@
     <title>Oppgave 2-1</title>
 </head>
 <body>
-    <a href=index.php>Gå tilbake</a>
+    
     <table border="1" cellpadding="5" cellspacing="0">
         <tr>
             <th> Etternavn </th>

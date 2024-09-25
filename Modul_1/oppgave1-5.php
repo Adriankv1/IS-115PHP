@@ -10,7 +10,6 @@
     <title>Document</title>
 </head>
 <body>
-    <p><a href="index.php">Gå tilbake</a></p> 
     
     <p> God morgen <?php Echo $navn ?>! 
     <?php Echo $hilsen ?></p>

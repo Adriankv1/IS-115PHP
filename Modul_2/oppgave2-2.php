@@ -12,7 +12,7 @@ $text = '<p>Viken</p> <a href>Johansen</a>';
     <title>Oppgave 2-2</title>
 </head>
 <body>
-    <a href=index.php>Gå tilbake</a>
+    
     <p><?php echo strip_tags($text);?></p> 
     <p><?php echo $text;?></p>
 </body>

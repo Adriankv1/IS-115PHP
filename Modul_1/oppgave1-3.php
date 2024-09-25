@@ -11,7 +11,7 @@
     <title>Oppgave 3</title>
 </head>
 <body>
-    <p><a href="index.php">Gå tilbake</a></p>
+
     
     <p><?php echo "$navn er $alder år gammel."; ?></p>
 
