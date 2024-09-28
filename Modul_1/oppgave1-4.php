@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oppgave 4</title>
+    <title>Oppgave 1-4</title>
 </head>
 <body>
 

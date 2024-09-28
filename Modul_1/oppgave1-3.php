@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oppgave 3</title>
+    <title>Oppgave 1-3</title>
 </head>
 <body>
 

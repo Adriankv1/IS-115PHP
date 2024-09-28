@@ -1,0 +1,76 @@
+/* Generelle stiler */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #6200ea;
+    color: white;
+    font-size: 2rem;
+}
+
+.modules-container {
+    display: grid; /* Bruker grid i stedet for flex */
+    grid-template-columns: repeat(5, 1fr); /* Maks 5 kolonner */
+    gap: 20px; /* Avstand mellom boksene */
+    margin: 2rem 5%; /* Øker margen på hver side av containeren */
+    padding: 0; /* Ingen ekstra padding */
+}
+
+.module {
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 4px;
+    padding: 1.1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px; /* Setter maks bredde for hver modul */
+    margin: 0 auto; /* Sentrerer modulene horisontalt */
+}
+
+.module h2 {
+    font-size: 1.5rem;
+    color: #6200ea;
+    margin-bottom: 1rem;
+}
+
+.module ul {
+    list-style: none;
+    padding: 0;
+}
+
+.module ul li {
+    border: 1px solid #000;
+    margin-bottom: 5px;
+    padding: 0.25rem;
+    background-color: #f9f9f9;
+}
+
+.module ul li a {
+    color: #6200ea;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.module ul li:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #6200ea;
+    color: white;
+    margin-top: 2rem;
+}

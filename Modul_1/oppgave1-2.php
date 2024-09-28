@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oppgave 2</title>
+    <title>Oppgave 1-2</title>
 </head>
 <body>
 </body>
