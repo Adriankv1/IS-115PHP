@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beregning av Rentesaldo</title>
+    <title>Oppgave 3-3</title>
 </head>
 <body>
-
-    <h1>Beregning av Rentesaldo</h1>
     
     <!-- Skjema for å legge inn startsaldo, rente og antall år -->
     <form method="post">

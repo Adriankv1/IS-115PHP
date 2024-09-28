@@ -1,14 +1,25 @@
 <?php
-$current_date = date("Y-m-d");
+$dato = date("Y-m-d");
 
-$event_date = "2024-09-29"; 
+$hendelse_dato = "2024-09-28"; 
 
 
-if ($current_date > $event_date) {
-    echo "Fotballkampen er allerede gjennomført.";
-} elseif ($current_date == $event_date) {
+if ($dato > $hendelse_dato) {
+    echo "Fotballkampen har allerede vært.";
+} elseif ($dato == $hendelse_dato) {
     echo "Fotballkampen er i dag.";
 } else {
-    echo "Fotballkampen er ikke gjennomført ennå.";
+    echo "Fotballkampen har ikke vært enda.";
 }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 3-1</title>
+</head>
+<body>
+    
+</body>
+</html>
