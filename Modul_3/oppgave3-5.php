@@ -2,7 +2,6 @@
 // Konstant for vekt per hvetekorn i gram
 define("WEIGHT_PER_GRAIN", 0.035);
 
-// Antall ruter på et sjakkbrett (8x8)
 $number_of_squares = 64;
 
 // Initialiserer variabler
@@ -13,7 +12,7 @@ echo "Antall hvetekorn på hver rute:\n";
 
 // Gå gjennom hver rute på sjakkbrettet
 for ($square = 1; $square <= $number_of_squares; $square++) {
-    echo "<br>Rute {$square}: {$grains_on_square} hvetekorn\n";
+    echo "<br>Rute $square: $grains_on_square hvetekorn\n";
     // Legg til hvetekorn på denne ruten til totalen
     $total_grains += $grains_on_square;
     // Dobler antall hvetekorn til neste rute
@@ -24,8 +23,8 @@ for ($square = 1; $square <= $number_of_squares; $square++) {
 $total_weight_in_grams = $total_grains * WEIGHT_PER_GRAIN;
 $total_weight_in_tons = $total_weight_in_grams / 1000000;
 
-echo "<br>\nTotalt antall hvetekorn: {$total_grains}\n";
-echo "<br>Total vekt i tonn: " . number_format($total_weight_in_tons, 2) . " tonn\n";
+echo "<br>Totalt antall hvetekorn: {$total_grains}";
+echo "<br>Total vekt i tonn: " . number_format($total_weight_in_tons) . " tonn";
 ?>
 <!DOCTYPE html>
 <html lang="en">

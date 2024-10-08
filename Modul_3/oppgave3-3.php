@@ -9,8 +9,8 @@
     
     <!-- Skjema for å legge inn startsaldo, rente og antall år -->
     <form method="post">
-        <label for="starts_saldo">Startsaldo (S0):</label>
-        <input type="number" name="starts_saldo" id="starts_saldo" step="0.01" required><br><br>
+        <label for="start_saldo">Startsaldo (S0):</label>
+        <input type="number" name="start_saldo" id="start_saldo" step="0.01" required><br><br>
 
         <label for="rente">Årlig Rente (i prosent):</label>
         <input type="number" name="rente" id="rente" step="0.01" required><br><br>
@@ -25,7 +25,7 @@
     // Sjekk om skjemaet er sendt inn
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Hent verdier fra skjemaet
-        $starts_saldo = (float) $_POST['starts_saldo'];
+        $start_saldo = (float) $_POST['start_saldo'];
         $rente = (float) $_POST['rente'];
         $antall_aar = (int) $_POST['antall_aar'];
 
@@ -33,10 +33,10 @@
         $rente = $rente / 100;
 
         // Variabel for nåværende saldo, starter med startsaldo
-        $saldo = $starts_saldo;
+        $saldo = $start_saldo;
 
         echo "<h2>Resultater</h2>";
-        echo "Startsaldo: " . number_format($starts_saldo, 2) . " kr<br>";
+        echo "Startsaldo: " . number_format($start_saldo, 2) . " kr<br>";
         echo "Årlig rente: " . ($rente * 100) . "%<br>";
         echo "Antall år: $antall_aar<br><br>";
 
@@ -50,7 +50,9 @@
         }
 
         // Til slutt skriv ut slutt-saldoen etter n år
-        echo "<br><strong>Etter $antall_aar år er den totale saldoen: " . number_format($saldo, 2) . " kr</strong><br>";
+        echo "<br><strong>Etter $antall_aar år er den totale
+         saldoen: " . number_format($saldo, 2) . 
+         " kr</strong><br>";
     }
     ?>
 

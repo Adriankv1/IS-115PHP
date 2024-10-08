@@ -14,7 +14,7 @@ $kommuner = [
 ];
 
 // Kommunen som skal sjekkes
-$kommune = "Kristiansand"; // Du kan endre denne til en annen kommune for å teste
+$kommune = "kristiansand";
 
 // Sjekker fylkestilhørighet og skriver ut beskjeden
 if (array_key_exists($kommune, $kommuner)) {

@@ -20,6 +20,5 @@ if ($dato > $hendelse_dato) {
     <title>Oppgave 3-1</title>
 </head>
 <body>
-    
 </body>
 </html>
