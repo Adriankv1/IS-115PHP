@@ -8,11 +8,11 @@ $number_of_squares = 64;
 $total_grains = 0;
 $grains_on_square = 1; // Start med 1 hvetekorn på første rute
 
-echo "Antall hvetekorn på hver rute:\n";
+echo "Antall hvetekorn på hver rute:";
 
 // Gå gjennom hver rute på sjakkbrettet
 for ($square = 1; $square <= $number_of_squares; $square++) {
-    echo "<br>Rute $square: $grains_on_square hvetekorn\n";
+    echo "<br>Rute $square: $grains_on_square hvetekorn";
     // Legg til hvetekorn på denne ruten til totalen
     $total_grains += $grains_on_square;
     // Dobler antall hvetekorn til neste rute

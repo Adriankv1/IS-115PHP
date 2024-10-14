@@ -1,6 +1,6 @@
 <?php
 // Aktiver umiddelbar sending av output til nettleseren
-ob_implicit_flush(true);
+//ob_implicit_flush(true);
 ob_end_flush();
 
 // Start summen på 0
@@ -14,7 +14,6 @@ for ($i = 0; $i <= 9; $i++) {
     // Legg til tallet i summen
     $sum += $i;
 
-    // Tving frem at innholdet sendes til nettleseren umiddelbart
     // ob_flush();
     flush();
 

@@ -1,7 +1,7 @@
 <?php
 $dato = date("Y-m-d");
 
-$hendelse_dato = "2024-09-28"; 
+$hendelse_dato = "2024-09-29"; 
 
 
 if ($dato > $hendelse_dato) {

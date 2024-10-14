@@ -10,10 +10,10 @@
     <!-- Skjema for å legge inn startsaldo, rente og antall år -->
     <form method="post">
         <label for="start_saldo">Startsaldo (S0):</label>
-        <input type="number" name="start_saldo" id="start_saldo" step="0.01" required><br><br>
+        <input type="number" name="start_saldo" id="start_saldo" required><br><br>
 
         <label for="rente">Årlig Rente (i prosent):</label>
-        <input type="number" name="rente" id="rente" step="0.01" required><br><br>
+        <input type="number" name="rente" id="rente" required><br><br>
 
         <label for="antall_aar">Antall År:</label>
         <input type="number" name="antall_aar" id="antall_aar" required><br><br>
