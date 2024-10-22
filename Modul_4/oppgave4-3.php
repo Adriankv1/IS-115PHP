@@ -24,29 +24,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = test_input($_POST["email"]);
     $mobile = test_input($_POST["mobile"]);
 
-    // Validering av navn
-    if (empty($name)) {
-        $nameError = "Navn er obligatorisk";
-    }
+    // Validering av navn. kan også fjernes hvis man ikke ønsker at det skal være obligatorisk ved endring.
+//    if (empty($name)) {
+    //     $nameError = "Navn er obligatorisk";
+    // }
 
-    // Validering av e-post
+    // Validering av e-post, kan også fjerne (empty) hvis man ikke ønsker at det skal være obligatorisk ved endring.
     if (empty($email)) {
         $emailError = "E-post er obligatorisk";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $emailError = "Ugyldig e-postformat";
     }
 
-    // Validering av mobilnummer
+    // Validering av mobilnummer, kan også fjerne (empty) hvis man ikke ønsker at det skal være obligatorisk ved endring.
     if (empty($mobile)) {
         $mobileError = "Mobilnummer er obligatorisk";
     } elseif (!preg_match("/^[0-9]{8}$/", $mobile)) {
         $mobileError = "Ugyldig mobilnummer, må være 8 siffer";
     }
 
-    // Hvis det ikke er noen feilmeldinger, sjekk for endringer
+    // Hvis det ikke er noen feilmeldinger, sjekk for endringer, kan fjerne empty dersom ønskes i gjen
     if (empty($nameError) && empty($emailError) && empty($mobileError)) {
         if ($name !== $user_profile["name"] || $email !== $user_profile["email"] || $mobile !== $user_profile["mobile"]) {
-            // Oppdater profilen
+            // Oppdater profilen, det kunne ha blitt sjekket om det ble gjort ingen endringer hvis man hadde lagret dataen i en database.
             $user_profile["name"] = $name;
             $user_profile["email"] = $email;
             $user_profile["mobile"] = $mobile;
@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 
-<h2>Brukerprofil</h2>
+<h2>Oppdater Brukerprofil</h2>
 
 <!-- Skjema for visning og endring av brukerprofil -->
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
