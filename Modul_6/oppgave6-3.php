@@ -1,22 +1,3 @@
-<?php
-require_once 'oppgave6-2.php';
-
-// Opprett to studenter
-$student1 = new Student("Ole", "Hansen", "2000-01-15", "ST12345");
-$student2 = new Student("Kari", "Olsen", "1999-05-20", "ST12346");
-
-// Vis informasjon om studentene
-echo "Student 1:\n" . $student1->visFullInfo() . "\n\n";
-echo "Student 2:\n" . $student2->visFullInfo() . "\n\n";
-
-// Slett studentene
-unset($student1);
-unset($student2);
-
-// Vis slettede brukernavn
-echo "Slettede brukernavn:\n";
-print_r(Bruker::getSlettedeBrukere());
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +6,29 @@ print_r(Bruker::getSlettedeBrukere());
     <title>Oppgave 6-3</title>
 </head>
 <body>
-    
+
+<?php
+// henter informasjon fra andre oppgave
+require_once 'oppgave6-2.php';
+
+// Opprett to brukere
+$Motelbruker1 = new Motelbruker("Ole", "Hansen", "MB12345");
+$Motelbruker2 = new Motelbruker("Kari", "Olsen", "MB12346");
+
+// Vis informasjon om brukeren
+echo "Bruker 1:\n" . $Motelbruker1->visFullInfo() . "\n\n";
+echo "Bruker 2:\n" . $Motelbruker2->visFullInfo() . "\n\n";
+
+// Slett brukerne
+unset($Motelbruker1);
+unset($Motelbruker2);
+
+// Vis slettede brukernavn
+echo "Slettede brukernavn:\n";
+print_r(Bruker::getSlettedeBrukere());
+?>
+
 </body>
 </html>
+
+

@@ -1,27 +1,3 @@
-<?php
-require_once 'oppgave6-1.php';
-
-class Student extends Bruker {
-    private $studentnummer;
-
-    public function __construct($fornavn, $etternavn, $fodselsdato, $studentnummer) {
-        parent::__construct($fornavn, $etternavn, $fodselsdato);
-        $this->studentnummer = $studentnummer;
-    }
-
-    // Overstyre visInfo-metoden
-    public function visInfo() {
-        return parent::visInfo() . ", Studentnummer: {$this->studentnummer}";
-    }
-
-    public function visFullInfo() {
-        return "Navn: {$this->fornavn} {$this->etternavn}\n" .
-               "Brukernavn: {$this->brukernavn}\n" .
-               "Registrert: {$this->registreringsdato}\n" .
-               "Studentnummer: {$this->studentnummer}";
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,5 +7,34 @@ class Student extends Bruker {
 </head>
 <body>
     
+<?php
+// henter informasjon fra første oppgave
+require_once 'oppgave6-1.php';
+
+// arv av klassen bruker fra 6-1
+class Motelbruker extends Bruker {
+    private $brukernummer;
+
+    public function __construct($fornavn, $etternavn, $brukernummer) {
+        parent::__construct($fornavn, $etternavn);
+        $this->brukernummer = $brukernummer;
+    }
+
+    // Overstyre visInfo-metoden
+    public function visInfo() {
+        return parent::visInfo() . ", Brukernummer: {$this->brukernummer}";
+    }
+
+    // funksjon som viser full info om en bruker
+    public function visFullInfo() {
+        return "Navn: {$this->fornavn} {$this->etternavn}\n" .
+               "Brukernavn: {$this->brukernavn}\n" .
+               "Registrert: {$this->registreringsdato}\n" .
+               "Brukernummer: {$this->brukernummer}<br>";
+    }
+}
+?>
+
 </body>
 </html>
+
